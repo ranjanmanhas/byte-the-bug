@@ -1,26 +1,28 @@
-#include < iostream>
-using namespace std;
+#include<stdio.h>
 
 int main(){
-	int arr[3][3] = {
-		{ 1, 2, 3},
-		{2,4,5},
-		{3,5,6}
-	};
-	 int flag = 0;
-	 
-	 for(int i = 0; i< 3; i++){
-		 for( int j = 0; j<i; j++) {
-			  if( arr[i][j] != arr[j][i]){
-			 flag = 1;
-			 break;
+    int a[3][3]={
+        i,2,3,
+        2,4,5,
+        3,5,6}
 
-		 }
-	 }
-	 }
-if( flag == 1) 
-cout<<" matrix  is  not symmatric \n";
-else 
-cout<<" matrix is symmatric ";
- retun 0;
+    };
+    int i,j,flag=0;
+
+    for(i=0;i<3;i++){
+        if(a[i][j]!=a[j][i]){
+            flag=1;
+            break;
+        }
+    }
+
+    if (flag==1){
+        printf("matrix is not symmetric\n");
+
+    }
+    else{
+        printf("matrix is symmetric\n");
+
+    }
+    return 0;
 }
