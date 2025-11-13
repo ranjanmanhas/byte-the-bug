@@ -1,19 +1,27 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 int main(){
     int a[3][3]={
-        {1,2,3}
-        {3,4,5}
-        {5,6,7}
-    }
-    int i,j, flag =0;
-    for (i=0;i<3;i++){
-        for ( j=0;j<3;j++){
-            flag = 1;
-            break;
+        {1,2,3},
+        {2,4,5},
+        {3,5,6}
+    };
+    int i,j;
+    int flag =0;
+
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            if(a[i][j]==a[j][i]){
+                flag=1;
+            }
         }
     }
+    if(flag==1){
+        printf("Matrix is Symmertical\n");
+
+    }
+    else{
+         printf("Matrix is not Symmertical\n");
+
+    }
+    return 0;
 }
-if (flag==1)
-cin>>"matrix is not symmetric:\n";
-else
