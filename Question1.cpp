@@ -1,22 +1,26 @@
-#include<io stream>
-using namespace std;
-int main(){
-    int a[3][3]{
-        {1,2,3}
-        {2,4,6}
-        {3,5,6}
-int i,j,flag=0;
-for(j=0;j,3;j++){
-    if(a[i][j]!=a[j][i])
-    flag=1;
-    break;
-}
+#include<stdio.h>
 
-
+ int main() {
+     int arr[3][3] = {
+        {1,2,3},
+        {2,3,4},
+        {3,4,5}
+     }
+     int i,j,flag=0;
+     for (int i=0; i<3;i++) {
+        for (int j=0; j<3;j++)  {
+            if(a[i][j] != a[i][j]) {
+                flag = i;
+                break;
+            }
         }
-}
-if(flag==1){
-cout<<"Marks is not symmertical\n")<<endl;
-cout<<("Matrix is symmertrical\n")<<endl;
-}
-return 0;
+        if (flag==1) {
+            printf("sys");
+        }
+        else {
+            printf("non");
+        }
+     }
+     return 0;
+    }
+ 
