@@ -1,16 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
+int main(){
+	int i, num;
+	 double long  fact = 1;
 
- int main () {
-    int i,num;
-    long long fact =1;
-   
-    printf("Enter a number: ");
-    scanf("%d",&num);
+	 printf("enter  a number :");
+	 scanf("%d", &num);
 
-    for(i=1;i<=num;i++) {
-        fact=fact*i;
-        
-        printf("Factorial of %d = %lld\n",&num,&fact);
-    }
- return 0;
- } 
+	 if(num ==  0){
+		 printf(" %d", num);
+	 }else {
+	 for( int i = 1; i<=num ; i++){
+		 fact = fact *i;
+
+	 }
+	 printf("factorial of %d = %ld \n", num, fact);
+	 }
+	 return 0;
+
+}
